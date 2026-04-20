@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:text="Vila Canaã"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do cliente" />
+
+        <EditText
+            android:id="@+id/servico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Serviço" />
+
+        <EditText
+            android:id="@+id/endereco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Endereço" />
+
+        <EditText
+            android:id="@+id/material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Valor material"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/mao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mão de obra"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/porcentagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Porcentagem de desconto à vista"
+            android:inputType="numberDecimal" />
+
+        <Spinner
+            android:id="@+id/pagamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/prazo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Prazo de entrega" />
+
+        <EditText
+            android:id="@+id/cor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cor escolhida" />
+
+        <EditText
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Informações adicionais" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="gerarOrcamento"
+            android:text="Gerar Orçamento" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="gerarPdf"
+            android:text="Gerar PDF" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="compartilhar"
+            android:text="Compartilhar PDF" />
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>
